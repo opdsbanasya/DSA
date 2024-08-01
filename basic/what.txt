@@ -1,0 +1,16 @@
+Thought process
+flowchart
+sceudo code
+compilation 
+HLL -> js, python
+middle level -> c++
+c ?
+
+l-02
+pr / compilation process
+first
+data type
+vars
++ve/-ve
+iterating
+type casting
