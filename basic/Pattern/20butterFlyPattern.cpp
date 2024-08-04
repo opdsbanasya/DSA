@@ -11,10 +11,7 @@ int main(){
         for(int col=0; col<row+1; col++){
             cout<<"*";
         }
-        for(int col=0; col<n-row-1; col++){
-            cout<<" ";
-        }
-        for(int col=0; col<n-row-1; col++){
+        for(int col=0; col<(2*n)-(2*row)-2; col++){
             cout<<" ";
         }
         for(int col=0; col<row+1; col++){
@@ -27,10 +24,7 @@ int main(){
         for(int col=0; col<n-row-1; col++){
             cout<<"*";
         }
-        for(int col=0; col<row+1; col++){
-            cout<<" ";
-        }
-        for(int col=0; col<row+1; col++){
+        for(int col=0; col<(2*row)+2; col++){
             cout<<" ";
         }
         for(int col=0; col<n-row-1; col++){
