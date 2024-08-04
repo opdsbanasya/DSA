@@ -10,15 +10,15 @@ int main(){
     for (int row = 0; row<n; row++){
         // star 
         for(int col=0; col<n-row; col++){
-            cout<<"* ";
+            cout<<"*";
         }
         // space
         for(int col=0; col<(2*row)+1; col++){
-            cout<<"  ";
+            cout<<" ";
         }
         // start
         for(int col=0; col<n-row; col++){
-            cout<<"* ";
+            cout<<"*";
         }
         cout<<endl;
     }
@@ -26,15 +26,15 @@ int main(){
     for (int row = 0; row<n; row++){
         // star
         for(int col=0; col<row+1; col++){
-            cout<<"* ";
+            cout<<"*";
         }
         // space
         for(int col=0; col<(2*n)-(2*row)-1; col++){
-            cout<<"  ";
+            cout<<" ";
         }
         // star
         for(int col=0; col<row+1; col++){
-            cout<<"* ";
+            cout<<"*";
         }
         cout<<endl;
     }
