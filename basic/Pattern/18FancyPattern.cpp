@@ -14,7 +14,7 @@ int main(){
                 cout<<"*";
             } else{
                 cout<<col;
-            }
+            }                                  
         }
         col = col - 1;
         for(; col>0; col--){
