@@ -8,6 +8,10 @@ int main(){
     cin >> n;
 
     for(int row=0; row<n; row++){
+        
+        for(int sp=0; sp<n-row; sp++){
+            cout<<" ";
+        }
         int col;
         for(col=0; col<row+1; col++){
             cout<<(char)(64+col+1);
