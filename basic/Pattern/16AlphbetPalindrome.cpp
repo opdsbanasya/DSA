@@ -8,17 +8,17 @@ int main(){
     cin >> n;
 
     for(int row=0; row<n; row++){
-        int c = 0;
-        for(int col=0; col<row+1; col++){
-            cout<<(char)(64+c+1);
-            c++;
+        int col;
+        for(col=0; col<row+1; col++){
+            cout<<(char)(64+col+1);
         }
-        for(int col=0; col<row; col++){
-            cout<<(char) (64+(c-1));
-            // cout<<c-1;
-            c--;
+        col = col - 1;
+        for(; col>0; col--){
+            cout<<(char) (64+(col));
         }
         cout<< endl;
     }
     return 0;
 }
+
+// or can use third variable approach 
