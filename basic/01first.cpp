@@ -12,7 +12,7 @@ int main(){
     char ch = 'c'; // 1byte
     cout<<ch<<endl;
     
-    const int b = 10; // constant
+    const int l = 10; // constant
 
     bool b = false;
     cout<<b<<endl; 
@@ -45,6 +45,7 @@ int main(){
     double j = 2.3;
     int w = (int)j;
     cout<<w<<endl;
+
 
 
     // operator
