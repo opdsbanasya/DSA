@@ -14,3 +14,6 @@ vars
 +ve/-ve
 iterating
 type casting
+
+Can we use continue in switch case?
+Ans. No, it is not allowed in switch case.
