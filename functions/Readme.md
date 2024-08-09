@@ -38,3 +38,16 @@ pass by value: Value of the actual parameter is copied into the formal parameter
 pass by reference: Address of the actual parameter is copied into the formal parameter.
 
 # Parameter vs Argument
+Parameter: The variable in the function declaration is called parameter.
+Argument: The actual value of the variable is called argument.
+
+# Problems
+- WAP to print a Message.
+- WAP to add two numbers.
+- WAP to find the maximum of two numbers.
+- WAP to find the maximum of three numbers.
+- WAP to find the factorial of a number.
+- WAP to find the sum of n natural numbers.
+- WAP to find the sum of n even numbers.
+- WAP to find the num is prime.
+- WAP to find the all prime numbers.
