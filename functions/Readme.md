@@ -36,3 +36,5 @@ return 1 means the program has been executed successfully but return -1 means th
 # pass by value vs pass by reference
 pass by value: Value of the actual parameter is copied into the formal parameter.
 pass by reference: Address of the actual parameter is copied into the formal parameter.
+
+# Parameter vs Argument
