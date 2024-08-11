@@ -4,14 +4,17 @@ using namespace std;
 
 void printPrimeNum(int n){
     int primeNum;
-    for(int i=1; i<=n; i++){
-        for(int j=1; j<=n; j++){
+    for(int i=2; i<=n; i++){
+        bool isPrime = true;
+        for(int j=2; j<=n; j++){
             if(i%j == 0){
+                isPrime = false;
                 break;
             }
-            primeNum = i;
         }
-        cout<<primeNum<<" ";
+        if(isPrime){
+            cout<<primeNum<<" ";
+        }
     }
 }
 
