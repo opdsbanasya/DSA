@@ -3,7 +3,7 @@
 using namespace std;
 
 bool checkPalindrome(int x){
-    if(n<=INT64_MIN){
+    if(x<=INT64_MIN){
         return 0;
     }
     int ans = 0;
