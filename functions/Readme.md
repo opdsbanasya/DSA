@@ -1,11 +1,11 @@
 # Function
 - It linked with a well define task.
-- Or can say it is a block of code that perform a specific task.
+- Or can say it is a `block of code` that perform a specific task.
 - It is a reusable code.
 
 # Why
 Suppose you have a task that you have to perform multiple times in your program then you can write a function for that task and you can call that function whenever you want to perform that task.
-Mean Function reduce the redundancy of code.
+Mean Function `reduce the redundancy` of code.
 
 # Syntax
 ```cpp
@@ -13,30 +13,30 @@ return_type function_name(parameters){
     // code
 }
 ```
-if function does not return anything then return_type is void.
+if function does not return anything then `return_type is void`.
 
 # What is return 0
-meaning of return 0 in c++ programming is the program has been executed successfully without any error.
+meaning of return 0 in c++ programming is the program has been `executed successfully` without any error.
 
 # Why main function call automatically
-main function is the entry point of the program. When we run the program, the operating system automatically calls the main function.
+main function is the `entry point` of the program. When we run the program, the `operating system` automatically calls the main function.
 
 # return 1 vs return -1
 `return 1` means the program has been executed successfully but `return -1` means the program has been executed with some error.
 
 # Function order
-In C++, the function must be declared before in main function and also before the function call. Otherwise, the compiler will give an error. The function can be defined anywhere.
+In C++, the function must be `declared` before in `main function` and also before the `function call`. Otherwise, the compiler will give an error. The function can be `defined` anywhere.
 
 
 # function call stack
 - It is a stack data structure.
 - It is used to store the function call.
-- When a function is called, the function call is pushed into the stack.
-- When the function is returned, the function call is pop from the stack.
+- When a function is called, the function call is `pushed` into the stack.
+- When the function is returned, the function call is `pop` from the stack.
 
 # Pass by value vs Pass by reference
-pass by value: Value of the actual parameter is copied into the formal parameter.
-pass by reference: Address of the actual parameter is copied into the formal parameter.
+**pass by value**: `Value` of the actual parameter is copied into the formal parameter.
+**pass by reference**: `Address` of the actual parameter is copied into the formal parameter.
 
 # Parameter vs Argument
 Parameter: The variable in the function declaration is called parameter.
@@ -90,10 +90,10 @@ Method to represent numeric values or quantities using digits.
         ```
         - Answer: 1010
     - **Bitwise Method:**
-        - obtain bit with bitwise AND operator(&) with 1.
-        - right shift(>>) the number by 1.
-        - repeat the process until the number is greater than 0.
-        - reverse the bit.
+        - obtain bit with `bitwise AND operator(&)` with 1.
+        - `right shift(>>)` the number by 1.
+        - `repeat` the process until the number is greater than 0.
+        - `reverse` the bit.
         - Example: let number is 10.
         ```
         10 -> (1010 & 1) -> 0
@@ -102,10 +102,10 @@ Method to represent numeric values or quantities using digits.
         2>>1 -> 1 -> (1 & 1) -> 1
         1>>1 -> 0 -> (0 & 1) -> 0
         ```
-        - Answer: 1010
+        - Answer: `1010`
 - #### Binary to Decimal:
     - **Multiplication Method:**
-        - Multiply each digit by 2^position.
+        - Multiply each digit by `2^position`.
         - Add all the result.
         - Example: let number is 1010.
         ```
