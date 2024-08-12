@@ -2,28 +2,25 @@
 
 using namespace std;
 
-void printPrimeNum(int n){
-    int primeNum;
-    for(int i=2; i<=n; i++){
-        bool isPrime = true;
-        for(int j=2; j<=n; j++){
-            if(i%j == 0){
-                isPrime = false;
-                break;
-            }
-        }
-        if(isPrime){
-            cout<<primeNum<<" ";
+bool primeOrNot(int number){
+    for(int i=2; i<number; i++){
+        if(number%i == 0){
+            return false;
         }
     }
+    return true;
 }
 
 int main(){
     int num;
     cout<<"Enter the Num"<<endl;
     cin>>num;
-
-    cout<<"All prime number from 1 to "<<num<<endl;
-    printPrimeNum(num);
+    
+    for(int i = 2; i<= num; i++){
+        bool isPrime = primeOrNot(i);
+        if(isPrime){
+            cout<<i<<" ";
+        }
+    }
     return 0;
 }
