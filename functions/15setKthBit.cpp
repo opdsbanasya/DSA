@@ -3,9 +3,11 @@
 using namespace std;
 
 int setKthBit(int n, int k){
-    int mask = 1<<k;
-    int ans = mask | n;
-    return ans;
+    // int mask = 1<<k;
+    // int ans = mask | n;
+    // return ans;
+
+    return n|(1<<k);
 }
 
 int main(){
