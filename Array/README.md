@@ -4,10 +4,9 @@
 - Array have fixed size.
 - Array index start from 0. because it help to finding the address of element in array.
 ```
+address of ith element = base address + (index * size of data type)
 
-address of ith element = base address + (i * size of data type)
-
-here base address is the address of 0th element.
+-> here base address is the address of 0th element.
 ```
 ### Why need array?`
 - To store similar data type element.
