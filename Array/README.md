@@ -1,0 +1,3 @@
+Array
+why
+memset function
