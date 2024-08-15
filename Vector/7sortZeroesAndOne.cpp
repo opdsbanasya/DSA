@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 
 using namespace std;
 
@@ -21,16 +22,12 @@ int main(){
     
     while(i !=end){
         if(arr[i] == 0){
-            int temp = arr[start];
-            arr[start] = arr[i];
-            arr[i] = temp;
+            swap(arr[start], arr[i]);
             i++;
             start++;
         }
         if(arr[i] == 1){
-            int temp = arr[i];
-            arr[i] = arr[end];
-            arr[end] = temp;
+            swap(arr[i], arr[end]);
             end--;
         }
     }
