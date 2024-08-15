@@ -6,9 +6,7 @@ using namespace std;
 int uniqueElement(vector<int> arr){
     int ans = 0;
     for(int i=0; i<arr.size(); i++){
-        cout<<"i = "<<i<<endl<<"before "<<ans<<endl;
         ans = ans^arr[i];
-        cout<<"after "<<ans<<endl;
     }
     return ans;
 }
@@ -21,7 +19,7 @@ int main(){
     vector<int> arr(n);
 
     cout<<"Enter the elements"<<endl;
-    for(auto i:arr){
+    for(int i=0; i<arr.size(); i++){
         cin>>arr[i];
     }
     cout<<"The unique element is: "<<uniqueElement(arr);
