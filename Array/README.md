@@ -42,7 +42,7 @@ Syntax: `memset(str,ch, n);`
 void *memset(arr, 1, size);
 ```
 
-## There are problem on array
+## There are some problems on array
 - Linear search
 - Count 0's and 1's
 - Max and min element
