@@ -52,6 +52,31 @@ int arrCap = arr.capcity()
 ```
 - **empty()**: it return bool values `false` and `true`
 
+## vector of vector
+- vector of vector is a `2D vector`.
+- **declaration**: `vector<vector<dataType>> name`
+- **initialization**: `vector<vector<dataType>> name(row, vector<dataType>(col, value))`
+```cpp
+vector<vector<int>> arr(3, vector<int>(3, 0));
+```
+
+- **push_back**: `name.push_back(vector<dataType>(col, value))`
+```cpp
+vector<vector<int>> arr;
+arr.push_back(vector<int>(3, 6));
+arr.push_back(vector<int>(3, 5));
+```
+or you can push back a vector
+```cpp
+vector<vector<int> > v;
+vector<int> temp{1, 2, 3};
+v.push_back(temp);
+```
+- **accessing**: `arr[row][col]`
+- **size()**: it returns the `size` of an vector.
+    number of rows: `arr.size()`
+    number of cols: `arr[0].size()` (if all rows have same number of cols otherwise you can row number)
+
 ## there some problems
 - Unique Element
 - Union of two arrays
