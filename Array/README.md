@@ -42,9 +42,36 @@ Syntax: `memset(str,ch, n);`
 void *memset(arr, 1, size);
 ```
 
+## 2D Array
+- An array that have number of rows and number of columns.
+- 2D array is a collection of 1D array.
+- **Memory allocation**: memory allocation in 2d arrayb is continous. but there are rows and cols for visualization.
+```
+1 2 3
+4 5 6       ->      1 2 3 4 5 6 7 8 9
+7 8 9
+```
+- **Declaration**: `dataType name[no. of rows][no. of columns];`
+- **Initialization**: `dataType name[no. of rows][no. of columns] = {{values...}, {values...}, {values...}, ...};`
+```cpp
+int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+```
+- **accessing**: there are 2 tpye of accessing 2d array element.
+    - row-wise accessing : `arr[row][col]`
+    - column-wise accessing: `arr[col][row]`
+
+**_MAKE SURE_**: when you declaring a 2d array as a parameter that must give number of columns otherwise it will give error.
+```cpp
+void fun(int arr[][3]) {
+    // code
+}
+```
+
+
 ## There are some problems on array
 - Linear search
 - Count 0's and 1's
 - Max and min element
 - Extreme print -> print first and last element
 - Reverse array
+- Transpose of matrix
