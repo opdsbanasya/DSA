@@ -16,7 +16,6 @@ void findDuplicate(vector<int> num){
         }
     }
 
-    
 }
 int main(){
     vector<int> num{1,3,5,3,4};
