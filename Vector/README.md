@@ -87,3 +87,8 @@ v.push_back(temp);
 - left rotate an array by 1
 - majority element
 - buy and sell stock
+- Sort Colors
+- Move All Negative Numbers to left
+- Find Duplicate
+- Find Missing Number
+- First Repeated element
