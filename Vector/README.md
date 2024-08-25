@@ -92,3 +92,4 @@ v.push_back(temp);
 - Find Duplicate
 - Find Missing Number
 - First Repeated element
+- Common Element from 3 sorted array
