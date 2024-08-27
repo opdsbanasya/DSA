@@ -63,8 +63,8 @@ vector<vector<int>> arr(3, vector<int>(3, 0));
 - **push_back**: `name.push_back(vector<dataType>(col, value))`
 ```cpp
 vector<vector<int>> arr;
-arr.push_back(vector<int>(3, 6));
-arr.push_back(vector<int>(3, 5));
+arr.push_back(vector<int>{3, 6});
+arr.push_back(vector<int>{3, 5});
 ```
 or you can push back a vector
 ```cpp
