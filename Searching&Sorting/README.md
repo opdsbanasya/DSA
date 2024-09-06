@@ -59,11 +59,11 @@ upper_bound(arr, arr+n, target); // for array
 - Binary Search
 - First & Last Occurrence of an element
 - Peak element in a mountain array
-- find missing number
 - square root using binary search
+- Binary search in 2D matrix
+- find missing number
 - pivot element
 - find in rotated & sorted array
-- Binary search in 2D matrix
 - Search in nearly sorted array
 - Division of two numbers using binary search
 - finding odd occurring number using binary search
