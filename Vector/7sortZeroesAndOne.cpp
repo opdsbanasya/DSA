@@ -5,31 +5,25 @@
 using namespace std;
 
 int main(){
-    int n;
-    cout<<"Enter size of vector"<<endl;
-    cin>>n;
+    // cout<<"Enter size of vector"<<endl;
+    // cin>>n;
 
-    vector<int> arr(n);
+    vector<int> arr{0,1,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,1};
 
-    cout<<"Enter the elements"<<endl;
-    for(int i=0; i<arr.size(); i++){
-        cin>>arr[i];
-    }
-   
-   int start = 0;
-    int end = arr.size()-1;
-    int i = 0;
+    // cout<<"Enter the elements"<<endl;
     
-    while(i !=end){
-        if(arr[i] == 0){
-            swap(arr[start], arr[i]);
-            i++;
+    int start = 0;
+    int end = arr.size()-1;
+    
+    while(start < end){
+        if(arr[start] == 0){
             start++;
         }
-        if(arr[i] == 1){
-            swap(arr[i], arr[end]);
+        if(arr[start] == 1){
+            swap(arr[start], arr[end]);
             end--;
         }
+        
     }
     
 
