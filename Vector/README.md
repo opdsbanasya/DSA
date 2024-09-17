@@ -78,17 +78,20 @@ v.push_back(temp);
     number of cols: `arr[0].size()` (if all rows have same number of cols otherwise you can row number)
 
 ## there some problems
-- Unique Element
+- Unique Element - use XOR
 - Union of two arrays
 - Intersection of two arrays
-- Two sum
+- Two sum 
 - 3 sum
-- sort zeros and ones
+- sort zeros and ones - use dutch national flag algorithm
+- Sort Colors(sort 0,1,2) - use dutch national flag algorithm
+- buy and sell stock
+- Move All Negative Numbers to left
+- Move all negative elements to end(gfg)
+- Move Zeroes to end(lc)
+
 - left rotate an array by 1
 - majority element
-- buy and sell stock
-- Sort Colors
-- Move All Negative Numbers to left
 - Find Duplicate
 - Find Missing Number
 - First Repeated element
