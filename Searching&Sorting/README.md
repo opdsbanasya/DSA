@@ -67,3 +67,25 @@ upper_bound(arr, arr+n, target); // for array
 - Search in nearly sorted array
 - Division of two numbers using binary search
 - finding odd occurring number using binary search
+- Search Insert Position
+- K different Pairs
+- K Closest Numbers
+
+# Exponential Search
+It is based `Binary Search` and used for `large size array`. In this search method, first we find the `sub-array` that have target element, at the end binary search applied on subarray.
+```cpp
+int i = 0;
+while(i<n && arr[i] <= x){
+    i = i*2;
+}
+
+int positionOfX = binarySearch(arr, /*start*/ i/2, /*end*/ min(i, n-1), x);
+// here start is i/2 because when we search subarray, we jump by step i*2, so when subarray found that i is at end of subarray.
+
+// end is min(i, n-1) because if i is out of main array than it gives n-1;
+
+return positionOfX;
+```
+### Application
+- Search in unbounded(infinite) array
+- Better the Binary Search when target is near to begin.
