@@ -71,6 +71,7 @@ upper_bound(arr, arr+n, target); // for array
 - K different Pairs
 - K Closest Numbers
 - [Book Allocation Problem](https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1)
+- [The Painter's Partition Problem-II](https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1)
 
 # Exponential Search
 It is based `Binary Search` and used for `large size array`. In this search method, first we find the `sub-array` that have target element, at the end binary search applied on subarray.
