@@ -7,19 +7,7 @@
     Output: 6  
     Explanation: Sum of digits is 1 + 2 + 3 = 6; sum of digits of 6 is 6 (which is a single digit).
 
-   ```cpp
-   int sumOfDigit(int num){
-    int sum = 0;
-    while(num > 0){
-        sum += num%10;
-        num /= 10;
-    }
-    return sum;
-   }
-
-   ```
-
-2. **Generating a Multiplication Table for a Range**  
+2. **Generating a Multiplication Table for a Range**  ✅
    **Difficulty**: Easy  
    **Topics**: Arrays, Basic Programming
    **Description**: Write a program to generate multiplication tables for numbers within a specified range.  
@@ -32,7 +20,7 @@
    2 x 3 = 6 3 x 3 = 9 4 x 3 = 12  
    2 x 4 = 8 3 x 4 = 12 4 x 4 = 16
 
-3. **Calculating the Sum of a Series (1 + 1/2 + 1/3 + ... + 1/n)**  
+3. **Calculating the Sum of a Series (1 + 1/2 + 1/3 + ... + 1/n)** ❌ 
    **Difficulty**: Medium  
    **Topics**: Mathematical Computations  
    **Description**: Write a program to calculate the sum of the series 1 + 1/2 + 1/3 + ... + 1/n up to the nth term.  

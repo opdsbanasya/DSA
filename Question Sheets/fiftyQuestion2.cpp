@@ -32,7 +32,7 @@ int main(){
     // cin>>num>>start>>end;
     // multiplicationTable(num, start, end);
 
-    // todo 3: 
+    // todo 3:
 
 
 
