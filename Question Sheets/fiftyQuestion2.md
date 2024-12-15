@@ -1,11 +1,23 @@
-1. **Finding the Sum of Digits of a Number Until Zero**  
+1. **Finding the Sum of Digits of a Number Until Zero** ✅
    **Difficulty**: Easy  
-   **Topics**: Basic Programming, Mathematical Computations  
-   **Description**: Write a program to repeatedly sum the digits of a number until the result is zero.  
-   **Example**:  
-   Input: number = 123  
-   Output: 6  
-   Explanation: Sum of digits is 1 + 2 + 3 = 6; sum of digits of 6 is 6 (which is a single digit).
+    **Topics**: Basic Programming, Mathematical Computations  
+    **Description**: Write a program to repeatedly sum the digits of a number until the result is zero.  
+    **Example**:  
+    Input: number = 123  
+    Output: 6  
+    Explanation: Sum of digits is 1 + 2 + 3 = 6; sum of digits of 6 is 6 (which is a single digit).
+
+   ```cpp
+   int sumOfDigit(int num){
+    int sum = 0;
+    while(num > 0){
+        sum += num%10;
+        num /= 10;
+    }
+    return sum;
+   }
+
+   ```
 
 2. **Generating a Multiplication Table for a Range**  
    **Difficulty**: Easy  
@@ -46,15 +58,13 @@
    Input: size = 5  
    Output:
 
-   -
-
-   ***
-
-   ***
-
-   ***
-
-   -
+   ```
+      *
+     * *
+    * * *
+     * *
+      *
+   ```
 
 6. **Counting the Number of Palindromic Substrings in a String**  
    **Difficulty**: Medium  
@@ -183,15 +193,13 @@
     Explanation: The subsets of [1, 2] are the empty set, [1], [2], and [1, 2].
 
 19. **Checking for Perfect Squares in a Range**  
-    **Difficulty**: Easy  
-    **Topics**: Mathematical Comput
-
-ations  
- **Description**: Write a program to check which numbers in a given range are perfect squares.  
- **Example**:  
- Input: start = 1, end = 10  
- Output: [1, 4, 9]  
- Explanation: Perfect squares between 1 and 10 are 1, 4, and 9.
+     **Difficulty**: Easy  
+     **Topics**: Mathematical Computations  
+    **Description**: Write a program to check which numbers in a given range are perfect squares.  
+    **Example**:  
+    Input: start = 1, end = 10  
+    Output: [1, 4, 9]  
+    Explanation: Perfect squares between 1 and 10 are 1, 4, and 9.
 
 20. **Finding the Sum of Diagonal Elements in a Matrix**  
     **Difficulty**: Easy  
@@ -367,9 +375,7 @@ ations
     **Example**:  
     Input: number = 54321, value = 3  
     Output: 2  
-    Explanation: The digits
-
-greater than 3 in 54321 are 5, 4, and 4, so the count is 2.
+    Explanation: The digits greater than 3 in 54321 are 5, 4, and 4, so the count is 2.
 
 38. **Generating a Pattern of Prime Numbers**  
     **Difficulty**: Medium  
