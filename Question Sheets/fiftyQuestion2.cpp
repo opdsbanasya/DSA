@@ -21,6 +21,10 @@ void multiplicationTable( int num , int start, int end){
     }
 }
 
+double sumOfHPSeries(int n, int a, int d){
+    return 1/d * log((2*a + (2*n - 1)*d)/(2*a - d));
+}
+
 int main(){
     // todo 1: Sum of digits
     // int num = 5662;
@@ -32,7 +36,12 @@ int main(){
     // cin>>num>>start>>end;
     // multiplicationTable(num, start, end);
 
-    // todo 3:
+    // todo 3: Sum of a Series (1 + 1/2 + 1/3 + ... + 1/n)
+    // int n;
+    // cout<<"Enter the number of terms of series :"<<endl<<"1 + 1/2 + 1/3 + ... + 1/n"<<endl;
+    // cin>>n;
+    // int a = 1, d = 1;
+    // cout<< "The sum of series for "<<n<<" terms: "<<sumOfHPSeries(n, a, d)<<endl;
 
 
 
