@@ -13,6 +13,18 @@ int getLength(char arr[]){
     return length;
 }
 
+void reverseString(char arr[]){
+    int l = 0;
+    int size = getLength(arr);
+    int h = size;
+
+    while(l<=h){
+        swap(arr[l], arr[h]);
+        l++;
+        h--;
+    }
+}
+
 int main(){
     // char name[100] = "Dharm Singh";
     // char name[100];
@@ -28,10 +40,17 @@ int main(){
     // }
 
     char name[100] = "Bahubali";
-    cout<<"Length is: "<<getLength(name)<<endl;
+    // cout<<"Length is: "<<getLength(name)<<endl;
 
-    // STL functions -> predefined function for char array in cpp
-    cout<<"Length is: "<<strlen(name)<<endl;
+    //  //* STL functions -> predefined function for char array in cpp
+    // cout<<"Length is: "<<strlen(name)<<endl;
+
+    int size = getLength(name);
+    reverseString(name);
+    
+    for(int i = 0; i<=size; i++){
+        cout<<name[i];
+    }
 
     return 0;
 }
