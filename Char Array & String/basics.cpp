@@ -2,20 +2,36 @@
 
 using namespace std;
 
+int getLength(char arr[]){
+    int length = 0;
+    int i = 0;
+    
+    while(arr[i] != '\0'){
+        length++;
+        i++;
+    }
+    return length;
+}
+
 int main(){
     // char name[100] = "Dharm Singh";
-    char name[100];
+    // char name[100];
     // cin>>name;
     // cout<<name<<endl;
 
-    cout<<"enter "<<endl;
-    cin>>name[3];
-    cin>>name[50];
+    // cout<<"enter "<<endl;
+    // cin>>name[3];
+    // cin>>name[50];
 
-    for(int i = 0; i<52; i++){
-        cout<<i <<" : "<<name[i]<<endl;
+    // for(int i = 0; i<52; i++){
+    //     cout<<i <<" : "<<name[i]<<endl;
+    // }
 
-    }
+    char name[100] = "Bahubali";
+    cout<<"Length is: "<<getLength(name)<<endl;
+
+    // STL functions -> predefined function for char array in cpp
+    cout<<"Length is: "<<strlen(name)<<endl;
 
     return 0;
 }
