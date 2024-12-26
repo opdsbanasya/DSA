@@ -25,6 +25,17 @@ double sumOfHPSeries(int n, int a, int d){
     return 1/d * log((2*a + (2*n - 1)*d)/(2*a - d));
 }
 
+void pairSum(int arr[], int size, int target){
+    for(int i = 0; i<size; i++){
+        for(int j = i+1; j<size; j++){
+            if(arr[i] + arr[j] == target){
+                cout<<"( "<<arr[i]<<", "<<arr[j]<<" ), ";
+            }
+        }
+    }
+}
+
+
 int main(){
     // todo 1: Sum of digits
     // int num = 5662;
@@ -43,8 +54,11 @@ int main(){
     // int a = 1, d = 1;
     // cout<< "The sum of series for "<<n<<" terms: "<<sumOfHPSeries(n, a, d)<<endl;
 
-
-
+    // todo 4: Finding All Pairs of Elements
+    // int nums[] = {1,2,3,4,5};
+    // int size = sizeof(nums)/sizeof(int);
+    // int target = 5;
+    // pairSum(nums,size, target);
 
 
 

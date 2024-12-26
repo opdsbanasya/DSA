@@ -20,7 +20,7 @@
    2 x 3 = 6 3 x 3 = 9 4 x 3 = 12  
    2 x 4 = 8 3 x 4 = 12 4 x 4 = 16
 
-3. **Calculating the Sum of a Series (1 + 1/2 + 1/3 + ... + 1/n)** ❌ 
+3. **Calculating the Sum of a Series (1 + 1/2 + 1/3 + ... + 1/n)** ✅
    **Difficulty**: Medium  
    **Topics**: Mathematical Computations  
    **Description**: Write a program to calculate the sum of the series 1 + 1/2 + 1/3 + ... + 1/n up to the nth term.  
@@ -29,7 +29,7 @@
    Output: 2.083333  
    Explanation: Sum of the series is 1 + 1/2 + 1/3 + 1/4 ≈ 2.083333.
 
-4. **Finding All Pairs of Elements in an Array that Add Up to a Given Sum**  
+4. **Finding All Pairs of Elements in an Array that Add Up to a Given Sum**  ✅
    **Difficulty**: Medium  
    **Topics**: Arrays, Hashing  
    **Description**: Write a program to find all pairs of elements in an array whose sum equals a specified target.  
