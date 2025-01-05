@@ -26,6 +26,7 @@ void reverseString(char arr[]){
 }
 
 int main(){
+    // todo: define and declare Char array
     // char name[100] = "Dharm Singh";
     // char name[100];
     // cin>>name;
@@ -39,18 +40,24 @@ int main(){
     //     cout<<i <<" : "<<name[i]<<endl;
     // }
 
+    // todo: Length of Char array
     char name[100] = "Bahubali";
     // cout<<"Length is: "<<getLength(name)<<endl;
 
     //  //* STL functions -> predefined function for char array in cpp
     // cout<<"Length is: "<<strlen(name)<<endl;
 
-    int size = getLength(name);
-    reverseString(name);
+    // todo: Reverse the char array
+    // int size = getLength(name);
+    // reverseString(name);
     
-    for(int i = 0; i<=size; i++){
-        cout<<name[i];
-    }
+    // for(int i = 0; i<=size; i++){
+    //     cout<<name[i];
+    // }
 
+    // todo: Replace spaces from char array
+    char str[100] = "Hello, I am a dev.";
+    cout<<str<<endl;
+    replaceSpaces(str);
     return 0;
 }
