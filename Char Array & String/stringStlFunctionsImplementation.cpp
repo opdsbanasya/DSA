@@ -1,4 +1,5 @@
 #include<iostream>
+#include <string>
 
 using namespace std;
 
@@ -14,6 +15,7 @@ bool isEmpty(string str){
     return str[0] == '\0' ? true : false;
 }
 
+//* Substring
 string getSubStr(string str, int si, int li){
     string substr = "";
 
@@ -33,6 +35,7 @@ string getSubStr(string str, int si){
     return getSubStr(str, si, getLength(str));
 }
 
+//* erase
 string doErase(string str, int si, int charCount){
     string erasedStr = "";
     int len = getLength(str);
@@ -51,8 +54,45 @@ string doErase(string str, int si){
     return doErase(str, si, getLength(str));
 }
 
+//* Find
+int findStr(string str, char target, int jump = 0){
+    int i = jump;
+    int len = getLength(str);
+    while(i<getLength(str)){
+        if(str[i] == target){
+            return i;
+        }
+        i++;
+    }
+    return -1;
+}
+
+// override function for strings
+int findStr(string str, string target){
+    int jump = 0;
+    int len = getLength(str);
+    int lenTarget = getLength(target);
+    while(jump < len){
+        int firstOcc = findStr(str, target[0], jump);
+        if(firstOcc < 0) return firstOcc;
+
+        bool match = true;
+        for(int i=0; i<lenTarget; i++){
+            if(str[firstOcc] != target[i]){
+                match = false;
+                break;
+            }
+            firstOcc++;
+        }
+        if(match == true) return firstOcc-lenTarget; // here first occurence is increase by length of target inside loop
+        jump = jump + firstOcc;
+    }
+
+    return -1;
+}
+
 int main(){
-    string str = "readme for c++";
+    string str = "readme is a pr good practice to make notes";
     // getline(cin, str);
     cout<<"main: "<<str<<endl;
 
@@ -70,9 +110,23 @@ int main(){
     // cout<<"First str: 1. "<<firststr<<endl<<sfirststr<<endl;
 
     // todo: erase 
-    cout<<"my function: '"<<doErase(str, 6)<<"'"<<endl;
-    cout<<"stl function: "<<str.erase(6)<<endl;
-    cout<<"After erasing: "<<str<<endl;
+    // cout<<"my function: '"<<doErase(str, 6)<<"'"<<endl;
+    // cout<<"stl function: "<<str.erase(6)<<endl;
+    // cout<<"After erasing: "<<str<<endl;
     
+    // // to compare
+    // string str2;
+    // cout<<"Enter string to compare: ";
+    // getline(cin, str2);
+    // cout<<"is "<<str<<" is equal to "<<str2<<"? "<<str.compare(str2)<<endl;
+
+    // to find
+    // cout<<"index number of 'e' is: " <<str.find("practice")<<endl; 
+    // cout<<"index number of 'e' is: " <<findStr(str, "practice")<<endl; 
+
+    // // to replace
+    // str.replace(6, 10, "Kumar");
+    // cout<<"After replacing: "<<str<<endl;
+
     return 0;
 }
