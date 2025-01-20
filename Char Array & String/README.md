@@ -1,5 +1,46 @@
 # Char Array & String
 
+## Char Array
+Char array is a `data structure` that used to store a `sequence of characters`. It is a `contiguous memory block` that stores characters. It is a `primitive` data type in C and C++.
+- **Syntax**: `char arrayName[size];`
+- **Example**: `char str[6] = "Hello";`
+- **User Input**: there are 2 ways to take input from user:
+    - `cin >> str[0];`
+    - `cin >> str;`
+- **Null Character**: When we take input sequence of characters at same time, a null character `\0` is automatically added at the end of the char array. It is used to indicate the `end` of the string. It is not counted in the length of the string.
+- **Problem**: There an sequence of characters is stored in an array, it display fully with space in middle(if any), but when we take input the char array, it only take the `first word` and ignore the rest of the words. beacause `cin` in cpp is read input till `delemiting characters` (`space`, `tab` or `newline`).
+    - **Example**: `cin >> str;` if we input `Hello World`, it will only take `Hello` and ignore `World`. 
+- **Solution**: to take input of full line of characters:
+    - `cin.ignore();` to ignore the newline character.
+    - `cin.getline(str, size);` to take input of full line of characters.
+
+### Questions
+- Length of a char array
+- Reverse a char array
+- Replace a character in a char array
+- Check if a char array is palindrome
+- Convert a char array to uppercase and lowercase
+
+## String
+It is a `data type` in C++ to store a sequence of characters. It is a `class` in c++ that is defined in `#include <string>` header file. It is a `dynamic array` that can `grow or shrink` in size. It is more flexible than char array.
+- **Syntax**: `string str = "Hello";`
+- **User Input**: There are 2 ways to take input from user:
+    - `cin >> str;`
+    - `getline(cin, str);`
+- In String, null character is automatically added at the end of the string.
+- **String Functions**:
+    - `str.length()`: return the length of the string.
+    - `str.size()`: return the size of the string.
+    - `str.empty()`: return true if the string is empty.
+    - `str.push_back('c')`: add a character at the end of the string.
+    - `str.pop_back()`: remove the last character from the string.
+    - `str.substr(StartIndex, Length)`: return a substring of the string from start index to length.
+    - `str.erase(StartIndex, LastIndex)`: remove the characters from start index to last index.
+    - `str.stoi()`: convert string to integer.
+    - `str.compare(str2)`: compare two strings.
+    - `str.find("substring")`: find a substring in the string.
+    - `str.replace(StartIndex, Length, "newString")`: replace the substring from start index to length with new string.
+
 ## Problems
 - [1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
 - [1910. Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/)
