@@ -41,6 +41,18 @@ It is a `data type` in C++ to store a sequence of characters. It is a `class` in
     - `str.find("substring")`: find a substring in the string.
     - `str.replace(StartIndex, Length, "newString")`: replace the substring from start index to length with new string.
 
+## Char Array vs String
+| Char Array | String |
+| --- | --- |
+| It is a `primitive` data type. | It is a `class` in C++. |
+| It is a `static` array. | It is a `dynamic` array. |
+| It is a `contiguous memory block`. | It is a `contiguous memory block`. |
+| It is a `sequence of characters`. | It is a `sequence of characters`. |
+| It is a `fixed size`. | It is a `dynamic size`. |
+| It is `less flexible`. | It is `more flexible`. |
+| It is `less secure`. | It is `more secure`. |
+| It is `less efficient`. | It is `more efficient`. |
+
 ## Problems
 - [1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
 - [1910. Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/)
