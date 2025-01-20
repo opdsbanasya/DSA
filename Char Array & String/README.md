@@ -44,14 +44,14 @@ It is a `data type` in C++ to store a sequence of characters. It is a `class` in
 ## Char Array vs String
 | Char Array | String |
 | --- | --- |
-| It is a `primitive` data type. | It is a `class` in C++. |
-| It is a `static` array. | It is a `dynamic` array. |
-| It is a `contiguous memory block`. | It is a `contiguous memory block`. |
-| It is a `sequence of characters`. | It is a `sequence of characters`. |
-| It is a `fixed size`. | It is a `dynamic size`. |
-| It is `less flexible`. | It is `more flexible`. |
-| It is `less secure`. | It is `more secure`. |
-| It is `less efficient`. | It is `more efficient`. |
+| `primitive` data type. | `class` in C++. |
+| `static` array. | `dynamic` array. |
+| `contiguous memory block`. | `contiguous memory block`. |
+| `sequence of characters`. | `sequence of characters`. |
+| `fixed size`. | `dynamic size`. |
+| `less flexible`. | `more flexible`. |
+| `less secure`. | `more secure`. |
+| `less efficient`. | `more efficient`. |
 
 ## Problems
 - [1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
