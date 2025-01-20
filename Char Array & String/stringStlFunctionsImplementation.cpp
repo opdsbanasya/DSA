@@ -91,6 +91,24 @@ int findStr(string str, string target){
     return -1;
 }
 
+//* Replace
+void doReplace(string &str, int si, int li, string str2){
+    int len = getLength(str);
+    int lenRep = getLength(str2);
+
+    for(int i = 0; i<lenRep; i++){
+        str[si] = str2[i];
+        si++;
+    }
+}
+
+/**
+ * str = readme is nice practice to make notes
+ * str = readme is a pr good practice to make notes
+ * si = 10, li = 8;
+ * repStr = "best"
+ */
+
 int main(){
     string str = "readme is a pr good practice to make notes";
     // getline(cin, str);
@@ -124,9 +142,10 @@ int main(){
     // cout<<"index number of 'e' is: " <<str.find("practice")<<endl; 
     // cout<<"index number of 'e' is: " <<findStr(str, "practice")<<endl; 
 
-    // // to replace
-    // str.replace(6, 10, "Kumar");
-    // cout<<"After replacing: "<<str<<endl;
+    // to replace
+    str.replace(6, 8, "Kum");
+    // doReplace(str, 6, 10, "Kumar");
+    cout<<"After replacing: "<<str<<endl;
 
     return 0;
 }
