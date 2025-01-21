@@ -17,8 +17,8 @@ Char array is a `data structure` that used to store a `sequence of characters`. 
 ### Questions
 - Length of a char array
 - Reverse a char array
-- Replace a character in a char array
-- Check if a char array is palindrome
+- Replace a character in a char array: 
+- Check if a char array is palindrome: [Solution](./palindrome.cpp)
 - Convert a char array to uppercase and lowercase: [Solution](./caseConverting.cpp)
 
 ## String

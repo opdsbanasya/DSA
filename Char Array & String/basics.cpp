@@ -24,6 +24,13 @@ void reverseString(char arr[]){
         h--;
     }
 }
+void replaceSpaces(char str[]){
+    for(int i=0; i<getLength(str); i++){
+        if (str[i] == ' ') {
+            str[i] = '_';
+        }
+    }
+}
 
 int main(){
     // todo: define and declare Char array
@@ -59,5 +66,6 @@ int main(){
     char str[100] = "Hello, I am a dev.";
     cout<<str<<endl;
     replaceSpaces(str);
+    cout<<str<<endl;
     return 0;
 }
