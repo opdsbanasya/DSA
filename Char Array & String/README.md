@@ -19,7 +19,7 @@ Char array is a `data structure` that used to store a `sequence of characters`. 
 - Reverse a char array
 - Replace a character in a char array
 - Check if a char array is palindrome
-- Convert a char array to uppercase and lowercase
+- Convert a char array to uppercase and lowercase: [Solution](./caseConverting.cpp)
 
 ## String
 It is a `data type` in C++ to store a sequence of characters. It is a `class` in c++ that is defined in `#include <string>` header file. It is a `dynamic array` that can `grow or shrink` in size. It is more flexible than char array.
