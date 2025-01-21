@@ -56,7 +56,7 @@ It is a `data type` in C++ to store a sequence of characters. It is a `class` in
 | less efficient. | more efficient. |
 
 ## Problems
-- [1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/) [Solution](./removeAdjacentDuplicates.cpp)
+- [1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/) ==> [Solution](./removeAdjacentDuplicates.cpp)
 - [1910. Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/)
 - [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/)
 - [539. Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/description/)
