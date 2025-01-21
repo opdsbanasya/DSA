@@ -15,9 +15,9 @@ Char array is a `data structure` that used to store a `sequence of characters`. 
     - `cin.getline(str, size);` to take input of full line of characters.
 
 ### Questions
-- Length of a char array
-- Reverse a char array
-- Replace a character in a char array: 
+- Length of a char array: [Solution](./basics.cpp)
+- Reverse a char array: [Solution](./basics.cpp)
+- Replace a character in a char array: [Solution](./basics.cpp)
 - Check if a char array is palindrome: [Solution](./palindrome.cpp)
 - Convert a char array to uppercase and lowercase: [Solution](./caseConverting.cpp)
 
@@ -40,6 +40,8 @@ It is a `data type` in C++ to store a sequence of characters. It is a `class` in
     - `str.compare(str2)`: compare two strings.
     - `str.find("substring")`: find a substring in the string.
     - `str.replace(StartIndex, Length, "newString")`: replace the substring from start index to length with new string.
+    - [Implementations](./stringStlFunctions.cpp)
+    - [User Defined Functions](./stringStlFunctionsImplementation.cpp)
 
 ## Char Array vs String
 | Char Array | String |
@@ -54,7 +56,7 @@ It is a `data type` in C++ to store a sequence of characters. It is a `class` in
 | less efficient. | more efficient. |
 
 ## Problems
-- [1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)
+- [1047. Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/) [Solution](./removeAdjacentDuplicates.cpp)
 - [1910. Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/description/)
 - [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/)
 - [539. Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/description/)
