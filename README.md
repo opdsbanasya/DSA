@@ -9,5 +9,5 @@
 - [Array](https://github.com/opdsbanasya/DSA/tree/main/Array)
 - [Vector](https://github.com/opdsbanasya/DSA/tree/main/Vector)
 - [Searching Algorithms](https://github.com/opdsbanasya/DSA/tree/main/Searching%20Algorithms)
-- [Char Array & String](https://github.com/opdsbanasya/DSA/tree/main/Searching%20Algorithms)
+- [Char Array & String](./Char%20Array%20&%20String/README.md)
 - [Basic Questions](https://github.com/opdsbanasya/DSA/tree/main/Question%20Sheets)
