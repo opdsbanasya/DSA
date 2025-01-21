@@ -12,7 +12,7 @@ void intoUppercase( char name[]){
     }
 }
 
-// // with null charactor '\0'
+// with null charactor '\0'
 void intoUppercaseWithSpace( char name[], int size ){
     for(int i=0; i<size; i++){
         if(name[i] == '\0') {
