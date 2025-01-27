@@ -63,8 +63,8 @@ It is a `data type` in C++ to store a sequence of characters. It is a `class` in
 - [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/) => [Solution](./PalindromicSubstrings.cpp)
 - [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) => [Solution](./validAnagram.cpp)
 - [917. Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/description/) => [Solution](./reverseOnlyLetters.cpp)
-- [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/)
-- [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/)
+- [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) => [Solution](./longestCommonPrefix.cpp)
+- [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) => [Solution](./reverseVowels.cpp)
 - [767. Reorganize String](https://leetcode.com/problems/reorganize-string/description/)
 - [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/)
 - Graph Anagram
