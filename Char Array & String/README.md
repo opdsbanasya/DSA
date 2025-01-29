@@ -68,8 +68,8 @@ It is a `data type` in C++ to store a sequence of characters. It is a `class` in
 - [767. Reorganize String](https://leetcode.com/problems/reorganize-string/description/)
 - [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/)
 - Graph Anagram
-- [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/)
-- [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+- [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) => [Solution](./longestPalindromic.cpp)
+- [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/) => [Solution](./findFirstOcc.cpp)
 - [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/description/)
 - [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/)
 - [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/description/)
