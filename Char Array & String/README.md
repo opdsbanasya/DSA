@@ -65,7 +65,7 @@ It is a `data type` in C++ to store a sequence of characters. It is a `class` in
 - [917. Reverse Only Letters](https://leetcode.com/problems/reverse-only-letters/description/) => [Solution](./reverseOnlyLetters.cpp)
 - [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) => [Solution](./longestCommonPrefix.cpp)
 - [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) => [Solution](./reverseVowels.cpp)
-- [767. Reorganize String](https://leetcode.com/problems/reorganize-string/description/)
+- [767. Reorganize String](https://leetcode.com/problems/reorganize-string/description/) => [Solution](./reorganizeString.cpp)
 - [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) => [Solution](./isomorphicString.cpp)
 - [49. Group Anagram](https://leetcode.com/problems/group-anagrams/description/)
 - [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) => [Solution](./longestPalindromic.cpp)
