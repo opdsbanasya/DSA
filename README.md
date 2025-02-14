@@ -3,11 +3,12 @@
 ## Language: C++
 
 ### Follow the list
-- [Fundamental Concepts](https://github.com/opdsbanasya/DSA/tree/main/basic)
-- [Pattern Problems](https://github.com/opdsbanasya/DSA/tree/main/basic/Pattern)
-- [Functions](https://github.com/opdsbanasya/DSA/tree/main/functions)
-- [Array](https://github.com/opdsbanasya/DSA/tree/main/Array)
-- [Vector](https://github.com/opdsbanasya/DSA/tree/main/Vector)
-- [Searching Algorithms](https://github.com/opdsbanasya/DSA/tree/main/Searching%20Algorithms)
+- [Fundamental Concepts](./basic/)
+- [Pattern Problems](./basic/Pattern/)
+- [Functions](./functions/Readme.md)
+- [Array](./Array/README.md)
+- [Vector](./Vector/README.md)
+- [Searching Algorithms](./Searching%20Algorithms/README.md)
 - [Char Array & String](./Char%20Array%20&%20String/README.md)
-- [Basic Questions](https://github.com/opdsbanasya/DSA/tree/main/Question%20Sheets)
+- [Basic Questions](./Question%20Sheets/fiftyQuestion1.md)
+- [Pointers](./Pointer/README.md)
