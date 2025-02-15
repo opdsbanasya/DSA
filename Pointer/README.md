@@ -131,4 +131,106 @@ int *p = &a;
 int *q = p;
 cout << *q << endl; // 10
 ```
+## 📦 Pointers with Arrays
+- 📚 Pointers and arrays are closely related in C++. 
+- 📝 An array name is a **constant pointer** to the first element of the array.
+- 🌐 Array elements can be accessed using pointers.
+- Example: 
+```cpp
+int arr[] = {1, 2, 3, 4, 5};
+cout<<arr<<endl;
+cout<<&arr<<endl;
+cout<<&arr[0]<<endl;
+// All three will print the same address -> Base address of the array
 
+int* ptr = arr;
+cout<<ptr<<endl; // Base address of the array
+cout<<&ptr<<endl; // Address of the pointer
+cout<<*ptr<<endl; // Value at the base address of the array
+```
+### Remember:
+- `&ptr` is the address of the pointer variable, not an array.
+- `ptr` is the base address of the array.
+- `arr` and `&arr` are the same (base address of the array).
+- `ptr` and `&ptr` Both are different.
+- `*arr` and `arr[0]` are the same (value at the base address of the array).
+- `*(arr+1)` and `arr[1]` are the same (value at the next address of the array).
+- `*(arr+i)`, `arr[i]`, and `i[arr]` are the same (value at the ith index of the array).
+```cpp
+int arr[] = {1, 2, 3, 4, 5};
+int* ptr = arr;
+cout<<*ptr<<endl; // 1
+cout<<*(ptr+1)<<endl; // 2
+cout<<*(arr+2)<<endl; // 3
+cout<<arr[3]<<endl; // 4
+cout<<3[arr]<<endl; // 4
+```
+
+### Diffrence between `array` and `pointer`:
+| Array | Pointer |
+|-------|---------|
+| Size = number of elements | Size = 8 bytes |
+| Cannot be reassigned | Can be reassigned |
+| Cannot be incremented | Can be incremented |
+| arr = arr + 1 ❌ (beacuse array is a const pointer) | ptr = ptr + 1 ✅ |
+| arr++ ❌ | ptr++ ✅ |
+
+
+## Pointer with Character Array
+- When a pointer is point to a character array, and we want to print what values hold the pointer, then it gives values of whole character array not base address because `cout` has different implementation for `int` and `char` array (overloaded function for `char*` which prints the whole string). For `int` array it prints the base address and for `char` array it prints the whole string.
+```cpp
+char ch[] = "Binary";
+char* c = arr;
+cout<<c<<endl; // Binary
+```
+### Remember:
+- `ch` gives the whole character array `"Binary"`.
+- `&ch` gives the base address of the character array.
+- `ch[0]` gives the first character of the character array.
+- `&c` gives the address of the pointer variable.
+- `*c` gives the first character of the character array `ch`.
+- `c` whole character array `"Binary"`.
+- `c+2` gives the substring `"nary"`.
+- `*(c+2)` gives the character `'n'`.
+
+### Good and Bad Pointers with Arrays
+- Good Pointer: Points to a valid memory location.
+- Bad Pointer: Points to an invalid memory location.
+
+| Good Practice ✅ | Bad Practice ❌ |
+|---------------|--------------|
+| `char ch[] = "Binary;` | `char* c = "Binary";` |
+| temp storage = "Binary" | temp storage = "Binary" |
+| memory change to storage of `ch` array | C Pointer store address of temp storage and here we don't know it how long work |
+
+## Pointer with Function
+- Pointers can be passed as arguments to functions.
+- This allows the function to modify the value of the variable passed.
+- Example:
+```cpp
+void increment(int* p) {
+    *p = *p + 1;
+}
+int main() {
+    int x = 10;
+    increment(&x);
+    cout << x << endl; // 11
+}
+```
+Array can also be passed as an argument to a function.
+- Example:
+```cpp
+void solve(int arr) {
+   cout<<sizeof(arr)<<endl; // 8
+}
+int main() {
+   int arr[] = {1, 2, 3, 4, 5};
+   solve(arr);
+   cout<<sizeof(arr)<<endl; // 20
+}
+```
+`Reason`: Here difference in size beacuse we pass the array as an argument to `solve` function, and array is passed as reference to the function, so it gives the size of the pointer `num` not the size of the array `num`.
+
+![image](./functionPointer.png)
+
+### 
