@@ -1,4 +1,4 @@
-# C++ Pointer Cheat Sheet
+# C++ Pointer 🚀
 
 ## 📝 Symbol Table
 - ✨ There is a data structure known as the **symbol-table** that stores variable names and their values in a map.
@@ -148,7 +148,7 @@ cout<<ptr<<endl; // Base address of the array
 cout<<&ptr<<endl; // Address of the pointer
 cout<<*ptr<<endl; // Value at the base address of the array
 ```
-### Remember:
+### 💡 Remember:
 - `&ptr` is the address of the pointer variable, not an array.
 - `ptr` is the base address of the array.
 - `arr` and `&arr` are the same (base address of the array).
@@ -156,6 +156,7 @@ cout<<*ptr<<endl; // Value at the base address of the array
 - `*arr` and `arr[0]` are the same (value at the base address of the array).
 - `*(arr+1)` and `arr[1]` are the same (value at the next address of the array).
 - `*(arr+i)`, `arr[i]`, and `i[arr]` are the same (value at the ith index of the array).
+- 💡 **Example**:
 ```cpp
 int arr[] = {1, 2, 3, 4, 5};
 int* ptr = arr;
@@ -166,7 +167,7 @@ cout<<arr[3]<<endl; // 4
 cout<<3[arr]<<endl; // 4
 ```
 
-### Diffrence between `array` and `pointer`:
+### 🪸 Diffrence between `array` and `pointer`:
 | Array | Pointer |
 |-------|---------|
 | Size = number of elements | Size = 8 bytes |
@@ -176,14 +177,15 @@ cout<<3[arr]<<endl; // 4
 | arr++ ❌ | ptr++ ✅ |
 
 
-## Pointer with Character Array
+## 🖨️ Pointer with Character Array
 - When a pointer is point to a character array, and we want to print what values hold the pointer, then it gives values of whole character array not base address because `cout` has different implementation for `int` and `char` array (overloaded function for `char*` which prints the whole string). For `int` array it prints the base address and for `char` array it prints the whole string.
+- 💡 **Example**:
 ```cpp
 char ch[] = "Binary";
 char* c = arr;
 cout<<c<<endl; // Binary
 ```
-### Remember:
+### 💡 Remember:
 - `ch` gives the whole character array `"Binary"`.
 - `&ch` gives the base address of the character array.
 - `ch[0]` gives the first character of the character array.
@@ -193,9 +195,9 @@ cout<<c<<endl; // Binary
 - `c+2` gives the substring `"nary"`.
 - `*(c+2)` gives the character `'n'`.
 
-### Good and Bad Pointers with Arrays
-- Good Pointer: Points to a valid memory location.
-- Bad Pointer: Points to an invalid memory location.
+### ✅ Good and ❌ Bad Pointers with Arrays
+- **Good Pointer**: Points to a valid memory location.
+- **Bad Pointer**: Points to an invalid memory location.
 
 | Good Practice ✅ | Bad Practice ❌ |
 |---------------|--------------|
@@ -203,22 +205,22 @@ cout<<c<<endl; // Binary
 | temp storage = "Binary" | temp storage = "Binary" |
 | memory change to storage of `ch` array | C Pointer store address of temp storage and here we don't know it how long work |
 
-## Pointer with Function
-- Pointers can be passed as arguments to functions.
-- This allows the function to modify the value of the variable passed.
-- Example:
+## 🎈 Pointer with Function 
+- 📌 Pointers can be passed as arguments to functions.
+- 🔄 This allows the function to modify the value of the variable passed.
+- 💡 Example:
 ```cpp
 void increment(int* p) {
-    *p = *p + 1;
+   *p = *p + 1;
 }
 int main() {
-    int x = 10;
-    increment(&x);
-    cout << x << endl; // 11
+   int x = 10;
+   increment(&x);
+   cout << x << endl; // 11
 }
 ```
-Array can also be passed as an argument to a function.
-- Example:
+- 📚 Array can also be passed as an argument to a function.
+- 💡 Example:
 ```cpp
 void solve(int arr) {
    cout<<sizeof(arr)<<endl; // 8
@@ -229,8 +231,91 @@ int main() {
    cout<<sizeof(arr)<<endl; // 20
 }
 ```
-`Reason`: Here difference in size beacuse we pass the array as an argument to `solve` function, and array is passed as reference to the function, so it gives the size of the pointer `num` not the size of the array `num`.
+☠️ `Reason`: Here difference in size beacuse we pass the array as an argument to `solve` function, and array is passed as reference to the function, so it gives the size of the pointer `num` not the size of the array `num`.
 
 ![image](./functionPointer.png)
 
-### 
+## 🎭 Double Pointer
+- 🌐 A **double pointer** is a pointer that points to another pointer.
+- 🗂️ It is used to store the address of a pointer variable.
+- 💡 Example:
+```cpp
+int n = 56;
+int* p = &n;
+int** q = &p;
+
+cout<<n<<endl; // value of n
+cout<<&n<<endl; // address of n
+cout<<p<<endl; // values of p (address of n)
+cout<<&p<<endl; // address of p
+cout<<*p<<endl; // value stored at address stored in p (Value of n)
+cout<<q<<endl; // value of q (address of p)
+cout<<&q<<endl; // addredd of q
+cout<<*q<<endl; // value stored at address store in q (value of p || address of n)
+cout<<**q<<endl; // value of n
+```
+```
+328            216          104
+   -----          -----         ----
+   |126|   =>     |104|   =>    |12|
+   -----          -----         ----
+  q              p             n
+```
+
+## 💡 Remember:
+- `n`: value of n
+- `&n`: address of n
+- `p`: values of p (address of n)
+- `&p`: address of p
+- `*p`: value stored at address stored in p (Value of n)
+- `q`: value of q (address of p)
+- `&q`: addredd of q
+- `*q`: value stored at address store in q (value of p || address of n)
+- `**q`: value of n
+
+## 🔗 Reference variables
+- 🔗 A **reference variable** is an alias for another variable i.e., same memory location but different names.
+- 📋 There is no copy of the variable, it is just another name for the same memory location.
+- 📝 Reference variables are declared using the `&` symbol.
+- 🔄 Reference variables are used to modify the original variable.
+- 📊 In the symbol table, the reference variable is stored with the same address as the original variable.
+- 💡 Example:
+```cpp
+int x = 10;
+int &y = x;
+cout<<x<<endl; // 10
+cout<<y<<endl; // 10
+```
+- Here `x` and `y` are the same memory location, so if we change the value of `x` then `y` also change and vice versa.
+
+### 🤔 Why use reference variables?
+- ❌ Cannot set a reference variable to null, but it is possible for pointers, making reference variables safer.
+- 👽 Pointers are complex to understand, but reference variables are more readable.
+- ⚡ Reference variables are more efficient than pointers.
+
+## 😐 Pass by Value Vs 😎 Pass by reference
+- **Pass by Value**: In this method, the value of the variable is passed to the function. So, the original value is not changed.
+- 💡 Example:
+```cpp
+void increment(int x) {
+    x = x + 1;
+}
+int main() {
+    int x = 10;
+    increment(x);
+    cout << x << endl; // 10
+}
+```
+- **Pass by Reference**: In this method, the reference of the variable is passed to the function. So, the original value is changed.
+- Example:
+```cpp
+void increment(int &x) {
+    x = x + 1;
+}
+int main() {
+    int x = 10;
+    increment(x);
+    cout << x << endl; // 11
+}
+```
+
