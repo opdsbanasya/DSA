@@ -91,3 +91,6 @@ return positionOfX;
 ### Application
 - Search in unbounded(infinite) array
 - Better the Binary Search when target is near to begin.
+
+## Problems
+- [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
