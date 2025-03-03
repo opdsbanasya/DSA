@@ -1,12 +1,12 @@
 # Basic Mathematics for DSA
 
-## Prime Numbers 🔢
+## 🔢 Prime Numbers 
 - Number is prime if it is divisible by 1 and itself only and have 2 factors.
 - There are methods to check if a number is prime or not:
-    - Naive Method 🐢
-    - Square Root Method 📐
-    - Sieve of Eratosthenes 🧹
-    - Segmented Sieve 🧩
+    - 🐢 Naive Method 
+    - 📐 Square Root Method
+    - 🧹 Sieve of Eratosthenes
+    - 🧩 Segmented Sieve
 
 ### 🐢 Naive Method
 - Check if a number is divisible by any number from 2 to n-1.
@@ -84,7 +84,7 @@ int countPrimes(int n) {
 - Given a range `[L, R]`, to count the number of prime numbers in the range.
 - Based on the Sieve of Eratosthenes.
 
-## GCD/HCF 🧮
+## 🧮 GCD/HCF 
 - GCD (Greatest Common Divisor) or HCF (Highest Common Factor) of two numbers is the largest number that divides both of them.
 - Euclidean Algorithm is used to find GCD.
 - Formula: `gcd(a, b) = gcd(a-b, b)` if a > b
@@ -103,11 +103,11 @@ int gcd(int a, int b){
 }
 ```
 
-## LCM 🧮
+## 🧮 LCM 
 - LCM (Least Common Multiple) of two numbers is the smallest number which can be divided by both numbers.
 - Formula: `lcm(a, b) = (a*b) / gcd(a, b)`
 
-## Modular Arithmetic 🧮
+## 🧮 Modular Arithmetic 
 - In mathematics, modular arithmetic is a system of arithmetic for integers, where numbers "wrap around" when reaching a certain value, called the modulus.
 - It is used to find the remainder of a number when divided by another number.
 - `a % n` = [0, 1, 2, ..., n-1]
@@ -117,7 +117,7 @@ int gcd(int a, int b){
     - `((a % m) % m) % m = a % m`
     - `(a * b) % m = a % m * b % m`
 
-## Fast Exponentiation 🧮
+## 🧮 Fast Exponentiation 
 - To calculate `a^b` in O(log b) time.
 - **Code**:
 ```cpp
