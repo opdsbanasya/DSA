@@ -7,6 +7,9 @@ void solve(int num[]){
 
     num[0] = 12;
 }
+void k(){
+    
+}
 
 int main(){
     // int arr[10] = {1,2,3,4};

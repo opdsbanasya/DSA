@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int removeDuplicates(vector<int> nums, int val){
+int removeElement(vector<int> nums, int val){
     int i = 0;
     int index = 0;
     int size = nums.size();
@@ -20,7 +20,7 @@ int removeDuplicates(vector<int> nums, int val){
 int main(){
     vector<int> nums = {0,1,2,2,3,0,4,2};
 
-    cout<<"Elements after removing duplicates: "<<removeDuplicates(nums,2);
+    cout<<"Elements after removing duplicates: "<<removeElement(nums,2);
 
     return 0;
 }
