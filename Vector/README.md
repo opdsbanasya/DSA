@@ -78,21 +78,22 @@ v.push_back(temp);
     number of cols: `arr[0].size()` (if all rows have same number of cols otherwise you can row number)
 
 ## there some problems
-- Unique Element - use XOR
-- Union of two arrays
-- Intersection of two arrays
-- Two sum 
-- 3 sum
-- sort zeros and ones - use dutch national flag algorithm
-- Sort Colors(sort 0,1,2) - use dutch national flag algorithm
-- buy and sell stock
-- Move All Negative Numbers to left
-- Move all negative elements to end(gfg)
-- Move Zeroes to end(lc)
-
-- left rotate an array by 1
-- majority element
-- Find Duplicate
-- Find Missing Number
-- First Repeated element
-- Common Element from 3 sorted array
+- [Unique Element - use XOR]() => [Solution](./findUniqueElement.cpp)
+- [Union of two arrays]() => [Solution](./UnionOfTwoArrays.cpp)
+- [Intersection of two arrays]() => [Solution](./intersectionOfTwoArrays.cpp)
+- [2 sum ](https://leetcode.com/problems/two-sum/description/?envType=problem-list-v2&envId=array) => [Solution](./TwoSum.cpp)
+- [3 sum]() => [Solution](./threeSum.cpp)
+- [sort zeros and ones - use dutch national flag algorithm]() => [Solution](./sortZeroesAndOne.cpp)
+- [buy and sell stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/?envType=problem-list-v2&envId=array) => [Solution](./bestTimeToBuyAndSellStock.cpp)
+- [Sort Colors(sort 0,1,2) - use dutch national flag algorithm]() => [Solution](./sortColor.cpp)
+- [Move All Negative Numbers to left]() => [Solution](./moveAllNegToLeft.cpp)
+- [Move all negative elements to end(gfg)]() => [Solution]()
+- [Move Zeroes to end(lc)]() => [Solution]()
+- [left rotate an array by 1]() => [Solution]()
+- [majority element]() => [Solution]()
+- [Find Duplicate]() => [Solution](./findDuplicate.cpp)
+- [Find Missing Number]() => [Solution](./findMissing.cpp)
+- [First Repeated element]() => [Solution](./firstRepeated.cpp)
+- [Common Element from 3 sorted array]() => [Solution](./commonElemsFromThreeSortedArray.cpp)
+- [Remove Element](https://leetcode.com/problems/remove-element/description/?envType=problem-list-v2&envId=array) => [Solution](./removeDuplicate.cpp)
+- [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/?envType=problem-list-v2&envId=array) => [Solution](./removeDuplicate.cpp)
