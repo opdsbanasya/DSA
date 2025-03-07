@@ -158,6 +158,8 @@ int fastExpo(int a, int b){
 - Example: Probability of an event `A` is `P(A) = Number of favorable outcomes / Total number of outcomes`.
 
 ##  🚀 Problems
-- Count Primes
-- GCD of two numbers
-- Modular Exponentiation for large numbers
+- [Prime number](https://www.geeksforgeeks.org/problems/prime-number2314/1)
+- [Count Primes](https://leetcode.com/problems/count-primes/)
+- [GCD of two numbers](https://www.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1)
+- [Modular Exponentiation for large numbers](https://www.geeksforgeeks.org/problems/modular-exponentiation-for-large-numbers5537/1)
+- [Product of Primes](https://www.geeksforgeeks.org/problems/product-of-primes5328/1)
