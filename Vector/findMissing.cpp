@@ -3,11 +3,13 @@
 
 using namespace std;
 
-void findDuplicate(vector<int> num){
+int findMultipleMissingNumsInSoerted(vector<int> num){
     // visited method
-    /* for(int i=0; i<num.size(); i++){
+    for(int i=0; i<num.size(); i++){
         int index = abs(num[i]);
-        if(num[index-1]>0){
+        if(index > num.size() && num[index-1]>0){
+            cout<<"index = "<<index<<" ,";
+            cout<<num[index-1]<<endl;
             num[index-1] *= -1;
         }
     }
@@ -15,30 +17,39 @@ void findDuplicate(vector<int> num){
         if(num[i]>0){
             cout<<i+1<<" ";
         }
-    } */
-
-    // swapping + sorting method
-    int i = 0;
-    while(i<num.size()){
-        int index = num[i] - 1;
-        if(num[i] != num[index]){
-            swap(num[i], num[index]);
-        } else {
-            ++i;
-        }
     }
-    for(int i=0; i<num.size(); i++){
-        if(num[i] != i+1){
-            cout<<i+1<<" ";
-        }
-    }
-
 }
+
+int findMissingSum(vector<int> &nums){
+    int len = nums.size();
+
+    // Sum method
+    int sumOfAll =  (len * (len + 1)) / 2;
+    int sumOfArray = 0;
+    for(auto i:nums){
+            sumOfArray += i;
+    }
+    return sumOfAll - sumOfArray;
+}
+
+int findMissingXor(vector<int> &nums){
+    int len = nums.size();
+
+    int xorOfAll = 0, xorOfArray=0;
+    for(int i = 0; i<len; i++){
+        xorOfAll ^= i+1;
+        xorOfArray ^= nums[i];
+    }
+        
+    return xorOfAll ^ xorOfArray;
+}
+
 int main(){
 
-    vector<int> num{1,3,4,3,5};
-    findDuplicate(num);
-    // cout<<missing<<endl;
+    vector<int> nums{9,6,4,2,3,5,7,0,1};
+
+    // cout<<findMissingSum(nums);
+    cout<<findMissingXor(nums);
 
     return 0;
 }
