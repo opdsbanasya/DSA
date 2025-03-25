@@ -108,6 +108,69 @@ It is a tree representation of the recursive calls there leaf nodes are the base
 ## Magical line of Recursion
 **Solve a single problem, Rcursion will handle ramaining problems.**
 
+## Time Complexity
+There are 2 ways to calculate the time and space complexity of a recursive function:
+- **Formula Method**: First write the recursive relation and then calculate the time and space complexity.
+  - Example: There a function that print numbers from 1 to n.
+    ```cpp
+    void printNumbers(int n){
+        if(n == 0){  // Suppose it take k time
+            return;
+        }
+        cout << n << " ";
+        printNumbers(n-1); // Suppose it take T(n-1) time
+    }
+    ```
+    - Formula: 
+    ```
+    T(n) = k + T(n-1)
+    T(n-1) = k + T(n-2)
+    T(n-2) = k + T(n-3)
+    |
+    |
+    T(1) = k + k1
+    --------------------------------
+    T(n) = k + k + k + .... + k + k1
+    T(n) = k*n + k1
+    Time Complexity: O(k*n + k1) = O(n)
+    ```
+
+- **Recurrence Tree Method**: Draw the recursive tree and then calculate the time and space complexity.
+    - Example: There a Recurence Tree of a function that print numbers from 1 to n.
+        ```
+        printNumbers(n) -> it take k time
+        |
+        printNumbers(n-1) -> it take k time
+        |
+        printNumbers(n-2) -> it take k time
+        |
+        |
+        |
+        printNumbers(1) -> it take k time
+        |
+        printNumbers(0) -> it take k1 time
+
+        Then, Time Complexity = k*n + k1 = O(n)
+        ```
+
+## Space Complexity
+If you write a recursive function, there you don't allocate any extra space, but your OS mainatain a call stack for every call and this count into Space Complexity.
+- There `printNumbers(n)` function, OS maintain a call stack for every call:
+    ```
+    |                   |
+    |                   |
+    | printNumbers(0)   |
+    | printNumbers(1)   |
+    | printNumbers(2)   |
+    |         |         |
+    |         |         |
+    | printNumbers(n-1) |
+    | printNumbers(n)   |
+    | main()            |
+    |-------------------|
+
+    Space Complexity = O(n + 1) = O(n)
+    ```
 ## Problems
 - Reverse counting from n to 1.
 - Factorial of a number.
@@ -118,4 +181,5 @@ It is a tree representation of the recursive calls there leaf nodes are the base
 - Max number in an array.
 - Find an element in an array.
 - Find the first and last occurrence of an element in an array.
+- Binary Search
 
