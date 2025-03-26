@@ -21,7 +21,13 @@ int main(){
     vector<int> occus;
 
     isKeyPresent(name, key, 0, occus);
-    if(occus.size() == 0) cout<<"Not Present"<<endl;
+    if(occus.size() == 0){ 
+        cout<<"Not Present"<<endl;
+        return 0;
+    }
+    
+    // count of Occurence
+    cout<<key<<" is present "<<occus.size()<<" times"<<endl;
     for(int i: occus){
         cout<<i<<" ";
     }
