@@ -2,14 +2,15 @@
 
 using namespace std;
 
-int isKeyPresent(string& name, char& key, int i){
-    if(i>name.size()-1) return -1;
+void isKeyPresent(string& name, char& key, int i, vector<int>& occus){
+    if(i>name.size()-1) return;
 
-    if(name[i] == key) return i;
+    if(name[i] == key){
+        occus.push_back(i);
+    }
 
-    isKeyPresent(name, key, i+1);
+    isKeyPresent(name, key, i+1, occus);
 }
-
 
 int main(){
     string name = "grab your chance";
@@ -17,6 +18,12 @@ int main(){
     cout<<"Enter the ker char: ";
     cin>>key;
 
-    cout<<"Key Present at index "<<isKeyPresent(name, key, 0);
+    vector<int> occus;
+
+    isKeyPresent(name, key, 0, occus);
+    if(occus.size() == 0) cout<<"Not Present"<<endl;
+    for(int i: occus){
+        cout<<i<<" ";
+    }
     return 0;
 }
