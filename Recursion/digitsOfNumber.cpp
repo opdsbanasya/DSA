@@ -2,8 +2,8 @@
 
 using namespace std;
 
-int digits(int &num){
-    if(num==0) return 0;
+void digits(int &num){
+    if(num==0) return;
 
     int dig = num % 10;
     num = num/10;
