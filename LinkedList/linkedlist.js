@@ -31,6 +31,26 @@ function addAtTail(head, data){
     return head;
 }
 
+// Remove From Head
+function removeAtHead(head){
+    if(head == null) return;
+    newHead = head.next;
+    head.next = null;
+    return newHead;
+}
+
+// Remove from Tail
+function removeAtTail(head){
+    if(head == null || head.next == null) return;
+    
+    let temp = head;
+    while(temp.next.next != null){
+        temp = temp.next;
+    }
+    temp.next = null;
+    return head;
+}
+
 // Display
 function displayList(head){
     let temp = head;
@@ -50,5 +70,9 @@ head = addAtHead(head, 30);
 head = addAtTail(head, 50);
 head = addAtTail(head, 40);
 displayList(head)
+head = removeAtHead(head);
+displayList(head);
+head = removeAtTail(head);
+displayList(head);
 
 // Add At Tail
