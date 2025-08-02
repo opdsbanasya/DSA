@@ -31,6 +31,24 @@ function addAtTail(head, data){
     return head;
 }
 
+// Add At ith node
+function addAt(haed, i, data){
+    if(head == null) return;
+    let temp = head;
+    let count = 0;
+    while(count < i-1){
+        temp = temp.next;
+        count += 1;
+    }
+
+    let newNode = createNode(data);
+    let nextI = temp.next;
+    temp.next = newNode;
+    newNode.next = nextI;
+
+    return head;
+}
+
 // Remove From Head
 function removeAtHead(head){
     if(head == null) return;
@@ -48,6 +66,21 @@ function removeAtTail(head){
         temp = temp.next;
     }
     temp.next = null;
+    return head;
+}
+
+function removeAt(head, i){
+    if(head == null) return;
+    let temp = head;
+    let count = 0;
+    while(count < i-1){
+        temp = temp.next;
+        count += 1;
+    }
+    let nodeToBeRemoved = temp.next;
+    let nextOfRemovedNode = temp.next.next;
+    temp.next = nextOfRemovedNode;
+    nodeToBeRemoved.next = null;
     return head;
 }
 
@@ -69,10 +102,14 @@ head = addAtHead(head, 20);
 head = addAtHead(head, 30);
 head = addAtTail(head, 50);
 head = addAtTail(head, 40);
-displayList(head)
-head = removeAtHead(head);
+// displayList(head)
+// head = removeAtHead(head);
+// displayList(head);
+// head = removeAtTail(head);
 displayList(head);
-head = removeAtTail(head);
+head = addAt(head, 2, 70);
 displayList(head);
-
+head = removeAt(head, 3);
+head = removeAt(head, 1);
+displayList(head);
 // Add At Tail
