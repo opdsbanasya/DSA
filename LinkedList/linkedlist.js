@@ -32,7 +32,7 @@ function addAtTail(head, data) {
 }
 
 // Add At ith node
-function addAt(haed, i, data) {
+function addAt(head, i, data) {
   if (head == null) return;
   let temp = head;
   let count = 0;

@@ -14,3 +14,4 @@
 - 📌 [Pointers](./Pointer/README.md) 
 - 📐 [Basic Maths](./Basic%20Math/README.md)
 - 🔁 [Recursion](./Recursion/README.md)
+- 📚 [Linked List](./LinkedList/README.md)
