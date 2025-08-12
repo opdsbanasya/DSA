@@ -42,12 +42,14 @@ function displayList(top) {
   console.log(result);
 }
 
-let top = null;
-top = pushElement(top, 2);
-top = pushElement(top, 3);
-top = pushElement(top, 4);
-top = pushElement(top, 5);
-displayList(top)
-top = popElement(top);
-displayList(top);
-console.log(peekElement(top));
+// let top = null;
+// top = pushElement(top, 2);
+// top = pushElement(top, 3);
+// top = pushElement(top, 4);
+// top = pushElement(top, 5);
+// displayList(top)
+// top = popElement(top);
+// displayList(top);
+// console.log(peekElement(top));
+
+module.exports = {createNode, pushElement, popElement, displayList}

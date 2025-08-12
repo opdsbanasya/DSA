@@ -53,3 +53,9 @@ There are multiple ways to implement their stack data structure:
     - Push the element X onto the original stack.
     - Push all elements from the temporary stack back onto the original stack.
     - Check the code in [**addAtBottom.js**](./addAtBottom.js)
+2. Reverse a stack
+**Approach**:
+    - Use a recursive function to reverse the stack.
+    - Pop the top element and hold it.
+    - Recursively call the function to reverse the remaining stack.
+    - Once the stack is empty, push the held element back onto the stack.
