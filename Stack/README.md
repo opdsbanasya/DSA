@@ -31,6 +31,7 @@ There are multiple ways to implement their stack data structure:
      - Peek: O(1)
      - isEmpty: O(1)
    - Space Complexity: O(n) for n elements in the stack.
+   - Check the code in [**stack.js**](./stack.js)
 2. **Using an array**: It provides a fixed-size stack with efficient access to elements.
    - An array is used to store stack elements.
    - A variable (top) keeps track of the index of the top element.
