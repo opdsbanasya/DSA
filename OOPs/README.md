@@ -211,3 +211,118 @@ p.price = 12000; // Valid price, will set
 console.log(p.price); // 12000
 ```
 - In the above example, `price` is a property that uses the `set` and `get` keywords to define the setter and getter methods for the private property `#price`. This allows you to access and modify the private property using the public `price` property.
+
+---
+
+## Prototype
+Objects are created by constructor function using `new` keyword. Let we have `Product` class and we created an object by any mechanism, If we make any changes in the class, object already exist and these changes doesn't reflect in object. In `Java/C++` objects are based on `classes` but in JavaScript, objects are based on `prototypes`.
+
+### Inheritance
+- Child classes inherit properties of Parent class using `extends` keyword. This allows you to create a new class that is based on an existing class, inheriting its properties and methods.
+-  In javascript if we don't have any mental model of copy. Objects are going to be linked to the classes.
+
+### Prototype Chain
+It is a mechanism, using which JS object inherits features from one in another, Every object by default having property named as `Prototype` When you make changes in prototype you will be able to reflect those changes in already created objects.
+- The prototype chain is a series of objects that are linked together, allowing an object to inherit properties and methods from its prototype and its prototype's prototype, and so on.
+- When you access a property or method on an object, JavaScript first checks if the property exists on the object itself. If it doesn't, it looks up the prototype chain until it finds the property or reaches the end of the chain. Still if it doesn't find the property then it returns `undefined`.
+- Code Example:
+    ```js
+    function Product(n, p, r) {
+        this.name = n;
+        this.price = p;
+        this.rating = r;
+    }
+    const p = new Product("Book", 100, 3.9);
+    Product.prototype.display = function() {
+        console.log(this);
+    }
+    p.display(); // Product { name: 'Book', price: 100, rating: 3.9 }
+    ```
+- Object created by `new` keyword doesn't have `prototype` property but it has `__proto__` property that points to the prototype of the object. know as `dunder proto`.
+
+### How prototype works?
+- In internal JS environment, there is a very critical `function` named as `Object()`, apart from that there is an another entinty(doesn't have any name) that is very important JS Object. There is an entity in `Object()` function that point to that entity(`unnamed` JS Object), which is known as `prototype`.
+- The `unnamed` JS object have multiple properties like toString, toJSON, etc. These properties are available to all objects created in JS.
+- There is an entity in `unnamed` object that points to the `object()` function named `constructor`, has nothing serious meaning that exist. It doesnt actually work like a constructor.
+- When you created an function constructor, apart that one more entity(`unnamed` object) gets created in the runtime environment. From function constructor you can access this `unnamed` object by property `prototype` and another linking back from unnamed object to function constructor using `constructor` property.
+- there is a hidden relationship between both `unnamed` objects of JS environment and runtime environment.
+
+<img src="./workingOfPrototype.png" alt="Prototype Chain" width="800" style="border: 1px solid #ccc; border-radius: 8px;">
+
+### 4 steps of `new` keyword
+- Create a new object
+- Set the prototype of the new object to the prototype of the constructor function
+- Call the constructor function with the new object as its context
+- Return the new object
+
+### Prototype vs __proto__
+| Property | **Prototype** | **\_\_proto__** |
+| -------- | -------------- | ---------------- |
+| Definition | A property of a function constructor that points to the prototype object. | A property of an object that points to its prototype. |
+| Usage | Used to define properties and methods that will be inherited by instances of the constructor function created with `new`. | Used to access the prototype of an object and its properties and methods. |
+| Access | Can only be accessed through the constructor function. | Can be accessed directly on the object. |
+| Modification | Modifying the prototype affects all instances created from the constructor function. | Modifying `__proto__` affects only the specific instance. |
+| Example | `Product.prototype.display = function() { console.log(this); }` | `p.__proto__.display()` |
+
+### Prototype vs Class
+| Property | **Prototype** | **Class** |
+| -------- | -------------- | --------- |
+| Definition | A mechanism for creating objects and defining their properties and methods. | A syntactical sugar over prototypes that provides a more structured way to define objects. |
+| Usage | Used to create objects and define their properties and methods. | Used to create classes and define their properties and methods. |
+| Access | Accessed through the constructor function and `__proto__` property. | Accessed through the class name and instance methods. |
+| Syntax | `function Product() { this.name = "Product"; }` | `class Product { constructor() { this.name = "Product"; } }` |
+| Inheritance | Achieved through the prototype chain. | Achieved using the `extends` keyword. |
+
+### Class Inheritance vs Prototype Inheritance
+- Class inheritance
+    - Uses the `extends` keyword to create a subclass that inherits properties and methods from a parent class.
+    - Provides a more structured and readable way to define inheritance.
+    - Allows for the use of `super` to call methods from the parent class.
+    - Example:
+    ```js
+    class Category {
+        constructor(c) {
+            this.category = c;
+        }
+    }
+
+    class Product extends Category {
+        constructor(n, c) {
+            super(c);
+            this.name = n;
+        }
+    }
+
+    Product.prototype.display = function () {
+        console.log(this);
+    };
+
+    const p = new Product("Laptop", "Electornics");
+    p.display();
+    // Product { name: 'Laptop', category: 'Electornics' }
+    ```
+- Prototype inheritance
+    - Uses the prototype chain to create a new object that inherits properties and methods from an existing object.
+    - Provides a more flexible way to define inheritance, but can be less readable and harder to maintain.
+    - Example:
+    ```js
+    function Category(c) {
+        this.category = c;
+    }
+
+    function Product(n, c) {
+        Category.call(this, c);
+        this.name = n;
+    }
+
+    Product.prototype = Object.create(Category.prototype);
+    Product.prototype.constructor = Product;
+
+    Product.prototype.display = function () {
+        console.log(this);
+    };
+
+    const p = new Product("Laptop", "Electornics");
+    p.display();
+    // Product { name: 'Laptop', category: 'Electornics' }
+    ```
