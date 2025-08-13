@@ -16,3 +16,4 @@
 - 🔁 [Recursion](./Recursion/README.md)
 - 📚 [Linked List](./LinkedList/README.md)
 - 📦 [Object-Oriented Programming](./OOPs/README.md)
+- 📦 [Stack](./Stack/README.md)

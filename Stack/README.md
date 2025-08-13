@@ -45,6 +45,7 @@ There are multiple ways to implement their stack data structure:
      - Peek: O(1)
      - isEmpty: O(1)
    - Space Complexity: O(n) for n elements in the stack.
+   - Check the code in [**stackUsingArr.js**](./stackUsingArr.js)
 
 ## Problems
 1. Write method that takes a stack as an input and an element X and instead of inserting X at the top, it inserts X at the bottom of the stack. Time complexity need not to be O(1).
