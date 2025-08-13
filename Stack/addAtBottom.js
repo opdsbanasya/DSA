@@ -21,11 +21,13 @@ function addAtBottom(top, data){
     return top;
 }
 
-let top = null;
-top = pushElement(top, 2);
-top = pushElement(top, 3);
-top = pushElement(top, 4);
-top = pushElement(top, 5);
-displayList(top)
-top = addAtBottom(top, 1)
-displayList(top)
+// let top = null;
+// top = pushElement(top, 2);
+// top = pushElement(top, 3);
+// top = pushElement(top, 4);
+// top = pushElement(top, 5);
+// displayList(top)
+// top = addAtBottom(top, 1)
+// displayList(top)
+
+module.exports = { addAtBottom }
